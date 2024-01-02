@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Backyard Birds: Survey</title>
+<link rel="stylesheet" href="mystyles.css">
+<link rel="stylesheet" href="print.css" media="print">
+<link rel="stylesheet" href="Survey.css">
+<script type="text/javascript" src="myscripts.js"></script>
+</head>
+
+<body onload="preloadImages()">
+
+    <div id="container">
+        <header>
+            <a href="#"><img class="logo" src="Images/BBlogo.jpg" alt="Logo" height="90" width="90"></a>
+            <a href="#"><img class="banner" src="Images/Banner.gif" alt="Banner" height="90" width="300"></a>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="AboutUs.html">About Us</a></li>
+                    <li><a href="Tributes.html">Tributes</a></li>
+                    <li><a href="Survey.html">Survey</a></li>
+                    <li><a href="Links.html">Favorites</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <h1 class="FormTop">Backyard Birds Survey</h1>
+
+            <p class="FormTop">We'd like to know more about our demographic! If you want to help, please take this short survey.</p>
+
+            <form action="FormToEmail.php" method="post" name="CustomerSurvey" target="_blank">
+
+            <fieldset>
+                <legend>Your Info</legend>
+                <ul>
+                <li>
+                    <label for="CustomerName">Name:</label>
+                    <input id="CustomerName" name="CustomerName" class="text" type="text" placeholder="Jessie Jones">
+                </li>
+                <li>
+                    <label for="CustomerEmail">Email:</label>
+                    <input id="CustomerEmail" name="CustomerEmail" class="text" type="text" placeholder="JessJones4213@example.com">
+                </li>
+                <li>
+                    <label for="CustomerPhone">Phone Number:</label>
+                    <input id="CustomerPhone" name="CustomerPhone" class="text" type="text" placeholder="(###) ###-####">
+                </li>
+                <li>
+                    <label for="CustomerCounty">What County are you from:</label>
+                    <select name="CustomerCounty" id="CustomerCounty">
+                        <option value="Not from Utah">Not from Utah</option>
+                        <option value="Salt Lake County" selected>Salt Lake County</option>
+                        <option value="Utah County">Utah County</option>
+                        <option value="Davis County">Davis County</option>
+                        <option value="Weber County">Weber County</option>
+                        <option value="Other County">Other County</option>
+                    </select>
+                </li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>You and Birds</legend>
+                <fieldset>
+                <li>
+                    <label for="CustomerFavBird">What is your favorite bird?</label>
+                    <input id="CustomerFavBird" name="CustomerFavBird" class="text" type="text" placeholder="Corus Corax">
+                </li>
+                </fieldset>
+                <fieldset>
+                <legend>Did you check out our Links?</legend>
+                <ul>
+                    <li>
+                    <label for="CustomerLinkClickedYes">Yes</label>
+                    <input id="CustomerLinkClickedYes" name="CustomerLinkClickedYes" class="CustomerLinkClicked" type="radio">
+                    </li>
+                    <li>
+                    <label for="CustomerLinkClickedNo">No</label>
+                    <input id="CustomerLinkClickedNo" name="CustomerLinkClickedNo" class="CustomerLinkClicked" type="radio">
+                    </li>
+                </ul>
+                </fieldset>
+                <fieldset>
+                <legend>Which of these birds have you seen?</legend>
+                <ul>
+                    <li>
+                    <label for="Parrot">Parrot</label>
+                    <input id="Parrot" name="Parrot" class="FormBirds" type="checkbox">
+                    </li>
+                    <li>
+                    <label for="Raven">Raven</label>
+                    <input id="Raven" name="Raven" class="FormBirds" type="checkbox">
+                    </li>
+                    <li>
+                    <label for="Dove">Dove</label>
+                    <input id="Dove" name="Dove" class="FormBirds" type="checkbox">
+                    </li>
+                    <li>
+                    <label for="Eagle">Eagle</label>
+                    <input id="Eagle" name="Eagle" class="FormBirds" type="checkbox">
+                    </li>
+                    <li>
+                    <label for="BurrowingOwl">Burrowing Owl</label>
+                    <input id="BurrowingOwl" name="BurrowingOwl" class="FormBirds" type="checkbox">
+                    </li>
+                    <li>
+                    <label for="GreatBlueHeron">Great Blue Heron</label>
+                    <input id="GreatBlueHeron" name="GreatBlueHeron" class="FormBirds" type="checkbox">
+                    </li>
+                    <li>
+                    <label for="Hummingbird">Hummingbird</label>
+                    <input id="Hummingbird" name="Hummingbird" class="FormBirds" type="checkbox">
+                    </li>
+                </ul>
+                </fieldset>
+                <ul>
+                <li>
+                    <label for="CustomerForwardedBy" id="CustomerForwardedByLabel">How did you hear about Backyard Birds?</label>
+                    <textarea id="CustomerForwardedBy" name="CustomerForwardedBy" class="text" placeholder="My cousin has been a follower of yours for a few years, and he introduced me to your website!"></textarea>
+                </li>
+                </ul>
+
+            </fieldset>
+            <input id="FormSubmit" name="subButton" type="submit" value="Submit Survey!">
+            <input id="FormReset" name="reset" type="reset" value="Reset">
+            </form>
+        </section>
+        <footer>
+            <p class="bodylink"><a href="email:ib066337@stu.provo.edu">Email the owners</a></p>
+            <p>This website has been created for educational and entertainment purposes</p>
+        </footer>
+    </div>
+
+</body>
+</html>
