@@ -235,3 +235,7 @@ fieldset{
 #LinksLi{
     margin-left: 65px;
 }
+
+ul{
+    list-style-type: none;
+}
